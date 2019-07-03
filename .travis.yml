@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+  - "9.3"
+# git:
+#   submodules: true
+env:
+  global:
+    - ADCENTER_TEST_TRAVIS_FRONTEND=1
+    - ADCENTER_TEST_TRAVIS=1
+    - ADCENTER_TEST_NOT_SSL=1
+    - ADCENTER_TEST_SELENIUM=1
+    - secure: kTwD6g9BsNzGZVzNv3FzwloyTpxCXhXsBnSAbiS7KxpohXKoqLvR84w9jOPMqEdTou9+rVQJsMnElKnuMyoXV/MdPI16BANgXXvM1Q2q0M/MO9aRghgGZYSkdKNQrMT2mhFSx1SYyzyPPTS4ytFx7PmULQwS3qHZdWqfISG6XLtBOaOQO6H/iAYT9d595i4FN4HY2EdLpBCiJCug9iFVrR6NpUcvSr5gKQchfHh+JcuHCPBwHalq0GVqUylozQ8/bxS/dgUrwdtOw8pF/nDzFoeobV5o9mb5tGOZq0Q6nTbgbG3Uj
+    - secure: kD+VKyJOyqwx2bEg80VhPPIiouqcMxRzSYJyJn1tcIHFeoVyvsrDDWIs53B8B5GPOD/rWyttrqXFQnaDhEaBEr0fbbPG7qvmo8utP85btiwlSMjsnxedTJiTMNd7HDBuMHMZ7XehK/4Rpk2cO5+QWxxjgSiVmcNBJKaHl82lXHclsz2+QF6jSVbhRXgQ2X0QB67TRSHHMzDpN2EwO8NYtn8DULsS873GD34clj3vxRwU+GfsUSWINpNbEuOQY92zbUncGtariNsoKWXcbRzlxC7Pej34gzuvU4d1AbfDNt3HLqq9JPdidiQLHiQ89fC1x1Ke8rX8cTJ+50eJKiGYvpM7CS/0qA+MFkAMxsoWydY7qM713L5Dc3P3WIOvuFHjIS1hgI0vo+tyJpVxdfYtM99QUXYLdz1DAhzbDX9QdqrZYrqI3vQ4qE9i6+wpzkoqzmMCzzXm7ugyIT4DUuTmSymyXZxJ+twW4VIgDbynDcYoJbqcal4SJNdFzAHOjgz0s0eZKdfymh/qf7Jcd+L4B05wiYBqrhhV+fh8U1c4QOH5kOLJ8IjEl3oKgT0Feo1YazpAwp/IWKKLVYmWAG9SBH0I8J8FcY4ryWP/rjQgrLb7+XGL/j9HC/GqbmXkGya6IKTRxSdUWUi33PbmSak1S4IPJ/faUUsihjkJuG1i0y4=
+notifications:
+  webhooks:
+    - http://http://198.135.236.13:13001/travis
+  
+sudo: required
+
+install:
+  # RUN BOWER BEFORE OTHER STUFF TO CATCH ENONENT ERROR EARLIER
+  - rm -rf ./package-lock.json
+  - npm install -q -y
+ 
+script: npm run test
+
