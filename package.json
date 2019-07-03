@@ -1,0 +1,39 @@
+{
+  "name": "sampleCI",
+  "version": "0.0.1",
+  "description": "foo",
+  "main": "test.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "$t(branding:name)",
+  "license": "Copyright (branding:name)",
+  "dependencies": {
+    "autoprefixer": "^7.1.5",
+    "browserstack-webdriver": "~2.41.1",
+    "chai": "3.0.0",
+    "chai-almost": "^1.0.1",
+    "chrome-har": "^0.10.0",
+    "chromedriver": "^2.40.0",
+    "connect-mysql": "^2.1.7",
+    "es6-promise": "^4.2.4",
+    "firefox-profile": "^1.1.0",
+    "inquirer": "^3.3.0",
+    "istanbul": "~0.4.5",
+    "istanbul-middleware": "~0.2.0",
+    "jshint": "~2.9.5",
+    "keycode": "^2.2.0",
+    "mail-listener2": "^0.3.1",
+    "mocha": "~4.0.0",
+    "mocha-istanbul": "~0.3.0",
+    "mocha-sonar-reporter": "^0.1.6",
+    "multiparty": "~4.1.3",
+    "nyc": "^13.1.0",
+    "rimraf": "^2.6.3",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "sonar-scanner": "^3.1.0",
+    "supertest": "~3.0.0",
+    "watch": "^1.0.2",
+    "xunit-file": "1.0.0"
+  }
+}
