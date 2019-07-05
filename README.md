@@ -1,3 +1,3 @@
 # localCI 
-run travis local .
+run travis local .s
 s
