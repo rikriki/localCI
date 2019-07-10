@@ -1,2 +1,5 @@
 # localCI 
-run travis local .f
+run travis local .s
+s
+s
+s
