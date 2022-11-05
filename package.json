@@ -20,7 +20,7 @@
     "firefox-profile": "^1.1.0",
     "inquirer": "^3.3.0",
     "istanbul": "~0.4.5",
-    "istanbul-middleware": "~0.2.0",
+    "istanbul-middleware": "~0.2.2",
     "jshint": "~2.9.5",
     "keycode": "^2.2.0",
     "mail-listener2": "^0.3.1",
